@@ -1,6 +1,8 @@
 steps:
-  - name: 'gcr.io/cloud-builders/gcloud'
-		args:
-			- '-c'
-			- 'echo "Build has started"'
-		entrypoint: 'bash'
+  - id: test
+    name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'sh'
+    args:
+      - '-c'
+      - |
+        echo "Testing build"
