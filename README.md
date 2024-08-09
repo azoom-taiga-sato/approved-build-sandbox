@@ -1,8 +1,8 @@
 # approved-build-sandbox
 
-1. Coding in your own branch
+1. Coder) Coding in your own branch
 
-2. Rebase your branch based on the main branch
+2. Coder) Rebase your branch based on the main branch
     ```bash
     $ git checkout main
 
@@ -14,13 +14,13 @@
 
     ```
 
-3. Push your commits into a remote repository
+3. Coder) Push your commits into a remote repository
 
-4. Make a PR and ask a reviewer for their review/approval
+4. Coder) Make a PR and ask a reviewer for their review/approval
 
-5. * Reviewer) Approve the PR (*NOT merge it into the main branch at this point)
+5. *Reviewer) Approve the PR (*NOT merge it into the main branch at this point)
 
-6. Update the version and create a new tag IN YOUR WORKING BRANCH and push again
+6. Coder) Update the version and create a new tag IN YOUR WORKING BRANCH and push again
     ```bash
     $ yarn version
     👇
@@ -31,8 +31,9 @@
     ✨  Done in 4.05s.
     ```
 
-8. * Reviewer) Do the final check and merge it into the main branch
+8. *Reviewer) Do the final check and merge it into the main branch
 
-9. Github actions automatically pushes the new tag into remote repository and Cloud build gets prepared along with the new tag creation.
+9. Github actions AUTOMATICALLY pushes the new tag into remote repository and, accordingly, Cloud build gets prepared its build along with the new tag creation.
 
-10. * Reviewer) Go to the Cloud Build and approve the prepared build
+10. *Reviewer) Go to the Cloud Build and approve the prepared build
+![alt text](image.png)

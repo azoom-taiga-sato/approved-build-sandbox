@@ -6,3 +6,5 @@ steps:
       - '-c'
       - |
         echo "Testing build"
+options:
+  logging: CLOUD_LOGGING_ONLY
